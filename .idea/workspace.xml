@@ -59,7 +59,7 @@
       <workItem from="1601900386366" duration="52000" />
       <workItem from="1602681496415" duration="2349000" />
       <workItem from="1603362768970" duration="1144000" />
-      <workItem from="1603363945097" duration="452000" />
+      <workItem from="1603363945097" duration="2023000" />
     </task>
     <task id="LOCAL-00001" summary="add header and main content">
       <created>1601665049457</created>
@@ -68,7 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601665049457</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add block series">
+      <created>1603364685880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603364685880</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add block series">
+      <created>1603364693016</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603364693016</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,7 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add header and main content" />
-    <option name="LAST_COMMIT_MESSAGE" value="add header and main content" />
+    <MESSAGE value="add block series" />
+    <option name="LAST_COMMIT_MESSAGE" value="add block series" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603363750910">

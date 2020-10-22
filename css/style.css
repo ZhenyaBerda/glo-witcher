@@ -13,6 +13,13 @@ body {
     font-style: normal;
     font-weight: normal;
     color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top right 20%;
 }
 
 .container {
@@ -124,6 +131,7 @@ body {
 .series {
     display: flex;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .series__card {
@@ -159,7 +167,7 @@ body {
     background-size: cover;
 }
 
-.navigation__arrow{
+.navigation__arrow {
     width: 32px;
     height: 23px;
     border: none;
@@ -167,4 +175,25 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+}
+
+/*footer*/
+.footer {
+    background-color: #141218;
+    padding: 20px 0;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #3a383d;
+}
+
+.footer__copyright {
+    color: #3a383d;
 }
