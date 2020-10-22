@@ -132,6 +132,8 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+    position: relative;
+    max-width: 420px;
 }
 
 .series__card {
@@ -167,7 +169,7 @@ body {
     background-size: cover;
 }
 
-.navigation__arrow {
+.swiper__arrow {
     width: 32px;
     height: 23px;
     border: none;
@@ -175,6 +177,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: -35px;
+}
+
+.swiper-container {
+    max-width: 420px;
+    margin-left: 0 !important;
 }
 
 /*footer*/

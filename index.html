@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
     <title>Ведьмак - неофициальный сайт сериала</title>
   </head>
   <body>
@@ -82,19 +83,37 @@
         </div>
         <!-- /.main-content -->
 
-        <div class="series">
-          <div class="series__card series-1">
-            <span class="series__card-subtitles">Серия 1</span>
-            <h2 class="series__card-title">Начало конца</h2>
-          </div>
-          <div class="series__card series-2">
-            <span class="series__card-subtitles">Серия 2</span>
-            <h2 class="series__card-title">Четыре знака</h2>
-          </div>
-          <div class="navigation">
-            <button class="navigation__arrow"></button>
+      <div class="series">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="series__card series-1">
+                <span class="series__card-subtitles">Серия 1</span>
+                <h2 class="series__card-title">Начало конца</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="series__card series-2">
+                <span class="series__card-subtitles">Серия 2</span>
+                <h2 class="series__card-title">Четыре знака</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="series__card series-2">
+                <span class="series__card-subtitles">Серия 3</span>
+                <h2 class="series__card-title">Четыре знака</h2>
+              </div>
+            </div>
+
           </div>
         </div>
+        <button class="swiper__arrow"></button>
+      </div>
 
       </div>
     </main>
@@ -115,5 +134,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>
