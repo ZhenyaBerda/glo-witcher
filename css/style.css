@@ -24,6 +24,7 @@ body {
 
 .container {
     max-width: 1140px;
+    width: 95%;
     margin: auto;
 }
 
@@ -202,8 +203,146 @@ body {
 .footer__link {
     text-decoration: none;
     color: #3a383d;
+    margin-left: 25px;
 }
 
 .footer__copyright {
     color: #3a383d;
+}
+
+.menu-button {
+    display: none;
+}
+
+/*responsive*/
+@media (max-width: 760px) {
+    .main-content__button {
+        display: none;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__copyright {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .footer__link:first-child {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .menu-button {
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        background-color: #FFFFFF;
+        width: 30px;
+        height: 2px;
+        cursor: pointer;
+    }
+
+    .menu-button:before {
+        content: '';
+        display: block;
+        background-color: #FFFFFF;
+        width: 30px;
+        height: 2px;
+        margin-top: -7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform .2s;
+    }
+
+    .menu-button:after {
+        content: '';
+        display: block;
+        background-color: #FFFFFF;
+        width: 30px;
+        height: 2px;
+        margin-top: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform .2s;
+    }
+
+    .menu-button-active {
+        height: 0;
+    }
+
+    .menu-button-active:before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+
+    .menu-button-active:after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+
+    .header {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #9D2929;
+        width: 250px;
+        padding-bottom: 40px;
+    }
+
+    .header-active {
+        display: flex;
+    }
+
+    .header__logo {
+        margin-bottom: 25px;
+    }
+
+    .menu-list {
+        margin: auto;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list__menu-link {
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+
+    .social {
+        order: 1;
+        margin-bottom: 22px;
+    }
+
+    .social__link:first-child {
+        margin-left: 0;
+    }
+
+    .swiper-container {
+        width: 80%;
+    }
+
+    .main-content {
+        margin-top: 196px;
+        max-width: 315px;
+    }
+
+    .content__main-title {
+        font-size: 56px;
+    }
+
+    .series {
+        width: 60%;
+    }
+
 }
